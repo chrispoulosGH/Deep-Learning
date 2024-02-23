@@ -139,8 +139,8 @@ class Net(nn.Module):
     def __init__(self):
         super().__init__()
         self.activation = F.relu
-        self.fc1 = nn.Linear(1 * 28 * 28, 120)
-        self.fc2 = nn.Linear(120, 48)
+        self.fc1 = nn.Linear(1 * 28 * 28, 100)
+        self.fc2 = nn.Linear(100, 48)
         self.fc3 = nn.Linear(48, 10)
 
     def forward(self, x):
